@@ -1,5 +1,86 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root .title {
+  width: 100%;
+  height: 40px;
+  padding-top: 3%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+#container{
+  margin: 85px;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 680px;
+
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: khaki;
+}
+
+#container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container form .label{
+  margin-top: 3%;
+  margin-bottom: 3%;
+ 
+}
+
+#container form .input{
+  width: 25vw;
+  height: 5vh;
+
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+  border: none;
+  border-radius: 10px;
+}
+
+#container form .button{
+  width: 12.5vw;
+  height: 5vh;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+  justify-content: space-evenly;
+  align-items: center;
+  
+  border: none;
+  border-radius: 10px;
+}
+
+#image-container{
+  background-image: url(https://cdn.dribbble.com/users/1771704/screenshots/10958440/media/e99d9793692603a5072f3b367a6296de.png) no-repeat 70% center;
+}
