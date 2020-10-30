@@ -1,86 +1,136 @@
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #root{
-  padding: 0;
-  margin: 0;
   width: 100vw;
   height: 100vh;
-  
+
+  padding: 32px;
+  padding-left: 100px;
+
+  outline: none;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#root .title {
-  width: 100%;
-  height: 40px;
-  padding-top: 3%;
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.title{
+  margin: none;
+  padding: none;
 }
 
+.title h1{
+  font-size: 68px;
+  font-weight: 300;
 
-#container{
-  margin: 85px;
+  margin: auto;
+  padding: 22px;
 
-  width: 100%;
-  max-width: 1100px;
+  font-family: 'Vidaloka', serif;
+  color: #69C191;
+}
 
-  height: 100%;
-  max-height: 680px;
+.title p{
+  font-size: 24px;
+  font-weight: 400;
 
-  border-radius: 30px;
+  margin: 0;
+  padding-left: 22px;
+
+  color: #834945;
+}
+
+#form{
+  position: absolute;
+
+  width: 40%;
+  height: 40%;
+
+  margin-top: 30px;
+  padding-left: 22px;
 
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: khaki;
 }
 
-#container form{
+#message{
+  padding-bottom: 32px;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-#container form .label{
-  margin-top: 3%;
-  margin-bottom: 3%;
- 
+#message label {
+  padding-bottom: 8px;
+
+  font-size: 16px;
+  color: #834945;
 }
 
-#container form .input{
-  width: 25vw;
-  height: 5vh;
+#message input{
+  height: 38px;
 
-  margin-top: 3%;
-  margin-bottom: 3%;
-
-  border: none;
   border-radius: 10px;
+  border: solid 1px #69C191;
+  background-color: #F8FFFB;
+
+  color: #69C191;
 }
 
-#container form .button{
-  width: 12.5vw;
-  height: 5vh;
+#spacing {
+  padding-bottom: 32px;
 
-  margin-top: 5%;
-  margin-bottom: 5%;
-  
-  justify-content: space-evenly;
-  align-items: center;
-  
-  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#spacing label {
+  padding-bottom: 8px;
+
+  font-size: 16px;
+  color: #834945;
+}
+
+#spacing input{
+  height: 38px;
+
   border-radius: 10px;
+  border: solid 1px #69C191;
+  background-color: #F8FFFB;
+  
+  color: #69C191;
 }
 
-#image-container{
-  background-image: url(https://cdn.dribbble.com/users/1771704/screenshots/10958440/media/e99d9793692603a5072f3b367a6296de.png) no-repeat 70% center;
+#sumbit{
+ display: inline;
+
+ align-items: center;
+ justify-content: space-evenly;
+}
+
+#submit button{
+  width: 100px;
+  height: 32px;
+
+  background-color: #F9DED7;
+  border: solid 1px #834945;
+  border-radius: 10px;
+
+  font-weight: bold;
+  color: #834945;
+}
+
+img {
+  position: absolute;
+  left: 54%;
+
+  width: 550px;
+  height: 550px;
+
+  mix-blend-mode: normal;
 }
