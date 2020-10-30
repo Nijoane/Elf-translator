@@ -16,24 +16,28 @@
        <form action="index.html" target="_self" method="GET">
         <div id="form">
           <div id="message">
-            <label for="str">Digite a menssagem que quer traduzir para élfico:</label>
-            <input type="text" id="str" value="" autofocus>
+            <label for="str">Digite a menssagem que quer traduzir:</label>
+            <input type="text" id="str" value="" required>
           </div>
           <div id="spacing">
             <label  for="offset">Escolha um espaçamento entre 1 e 26:</label>
-            <input type="number" id="offset" value="" min="1" max=26>
+            <input type="number" id="offset" value="" min="1" max="26" required>
+          </div>
+
+          <div class="result">
+            <input id="result" value="" placeholder="Seu resultado aparecerá aqui!" readonly>
           </div>
               
           <div id="submit">
-            <button class="button" type="submit"  id="encode">Encode</button>
-            <button class="button" type="submit"  id="decode">Decode</button>
+            <button class="button" type="submit"  id="encode">Traduzir para Élfico</button>
+            <button class="button" type="submit"  id="decode">Traduzir para Português</button>
           </div>
         </div>
       </form>
 
-        <!-- <div id="image-container"> -->
-          <img src="images/elf.jpg" alt="">
-        <!-- </div> -->
+      <!-- <div id="image-container"> -->
+        <img src="images/elf.jpg" alt="">
+      <!-- </div> -->
     </main>
 
     <script src="index.js" type="module"></script>
