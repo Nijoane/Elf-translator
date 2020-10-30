@@ -16,6 +16,7 @@
 
   display: flex;
   flex-direction: column;
+  background-color: #FFF;
 }
 
 .title{
@@ -50,7 +51,7 @@
   width: 40%;
   height: 40%;
 
-  margin-top: 30px;
+  padding-top: 120px;
   padding-left: 22px;
 
   display: flex;
@@ -66,19 +67,21 @@
 }
 
 #message label {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 
-  font-size: 16px;
+  font-size: 15px;
   color: #834945;
 }
 
 #message input{
   height: 38px;
+  padding: 5px;
 
   border-radius: 10px;
-  border: solid 1px #69C191;
-  background-color: #F8FFFB;
+  border: solid 2px #69C191;
 
+  font-size: 14px;
+  font-weight: 400;
   color: #69C191;
 }
 
@@ -90,20 +93,38 @@
 }
 
 #spacing label {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 
-  font-size: 16px;
+  font-size: 15px;
   color: #834945;
 }
 
 #spacing input{
   height: 38px;
+  padding: 5px;
 
   border-radius: 10px;
-  border: solid 1px #69C191;
-  background-color: #F8FFFB;
-  
+  border: solid 2px #69C191;
+
+  font-size: 14px;
+  font-weight: 400;
   color: #69C191;
+}
+
+.result{
+  padding-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.result input {
+  height: 38px;
+  padding: 5px;
+  
+  border: none;
+  border-radius: 10px;
+  background-color: #F8E8E4;
 }
 
 #sumbit{
@@ -114,15 +135,31 @@
 }
 
 #submit button{
-  width: 100px;
-  height: 32px;
+  width: 110px;
+  height: 42px;
 
-  background-color: #F9DED7;
+  background-color: #F8E8E4;
   border: solid 1px #834945;
   border-radius: 10px;
 
+  font-size: 12px;
+
   font-weight: bold;
   color: #834945;
+}
+
+#submit button:hover {
+  width: 110px;
+  height: 42px;
+
+  background-color: #DBFFEA;
+  border: solid 1px #69C191;
+  border-radius: 10px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+  color: #69C191;
 }
 
 img {
