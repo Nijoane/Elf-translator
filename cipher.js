@@ -1,5 +1,5 @@
-const cipher = {
 
+const cipher = {
   encode: (str, offset) => {
     let thisCipher = "";
     for(let i = 0; i < str.length; i++) {
@@ -14,9 +14,9 @@ const cipher = {
       } else {
         thisCipher += str.charAt(i);
       }
-      
-      return thisCipher;
     }  
+    
+    return thisCipher;
   },
 
   decode: (str, offset) => {
@@ -33,9 +33,9 @@ const cipher = {
       } else {
         thisDecipher += str.charAt(i);
       }
-
-      return thisDecipher;
     }  
+
+    return thisDecipher;
   },
 }
 
