@@ -1,4 +1,3 @@
-
 const cipher = {
   encode: (str, offset) => {
     let thisCipher = "";

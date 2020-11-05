@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
   <head>
     <meta charset="utf-8">
@@ -12,16 +12,16 @@
         <h1>Elf.</h1>
         <p>Seu tradutor de linguagem élfica</p>
       </div>
-
-       <form action="index.html" target="_self" method="GET">
+       <form action="." target="_self" method="POST">
         <div id="form">
           <div id="message">
-            <label for="str">Digite a menssagem que quer traduzir:</label>
+            <label for="str">Digite a mensagem que deseja traduzir:</label>
             <input type="text" id="str" required>
           </div>
+
           <div id="spacing">
-            <label  for="offset">Escolha um espaçamento entre 1 e 26:</label>
-            <input type="number" id="offset" min="1" max="26" required>
+            <label  for="offset">Escolha um espaçamento:</label>
+            <input type="number" id="offset" min="1" required>
           </div>
 
           <div class="result">
@@ -29,8 +29,8 @@
           </div>
               
           <div id="submit">
-            <button class="button" type="submit"  id="btnEncode">Traduzir para Élfico</button>
-            <button class="button" type="submit"  id="btnDecode">Traduzir para Português</button>
+            <button class="button" type="submit"  id="btnEncode" value="encode">Traduzir para Élfico</button>
+            <button class="button" type="submit"  id="btnDecode" value="decode">Traduzir para Português</button>
           </div>
         </div>
       </form>

@@ -1,20 +1,23 @@
 import cipher from './cipher.js';
 
 const btnEncodeElement = document.getElementById("btnEncode");
-const btnDecodeElement = document.getElementById("btnDecode");
+function encodeMessage(event) {
+  event.preventDefault();
 
-btnEncodeElement.addEventListener('click', encodeMessage);
-function encodeMessage() {
   let str = document.getElementById("str").value;
 
-  const offset = Number(document.getElementByIdr("offset").value);
+  const offset = Number(document.getElementById("offset").value);
   const messageEncode = cipher.encode(str, offset);
 
- document.getElementById("result").innerHTML = messageEncode;
+  document.getElementById("result").innerHTML = messageEncode;
 }
 
-btnDecodeElement.addEventListener('click', decodeMessage);
-function decodeMessage() {
+btnEncodeElement.addEventListener('click', encodeMessage);
+
+const btnDecodeElement = document.getElementById("btnDecode");
+function decodeMessage(event) {
+  event.preventDefault();
+
   let str = document.getElementById("str").value;
 
   const offset = Number(document.getElementById("offset").value);
@@ -23,8 +26,7 @@ function decodeMessage() {
  document.getElementById("result").innerHTML = messageDecode;
 }
 
-// eslint-disable-next-line no-console
-console.log(btnDecodeElement)
+btnDecodeElement.addEventListener('click', decodeMessage);
 
 // eslint-disable-next-line no-console
 console.log(cipher);
