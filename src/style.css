@@ -10,7 +10,8 @@
   height: 100vh;
 
   padding: 32px;
-  padding-left: 100px;
+  padding-left: 10vw;
+  padding-top: 10vh;
 
   outline: none;
 
@@ -20,6 +21,7 @@
 }
 
 .title{
+  width: 45vw;
   margin: none;
   padding: none;
 }
@@ -28,8 +30,8 @@
   font-size: 68px;
   font-weight: 300;
 
-  margin: auto;
-  padding: 22px;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
 
   font-family: 'Vidaloka', serif;
   color: #69C191;
@@ -39,8 +41,9 @@
   font-size: 24px;
   font-weight: 400;
 
-  margin: 0;
-  padding-left: 22px;
+  margin-bottom: 3vh;
+  padding-bottom: 5vh;
+  padding-left: 1vw;
 
   color: #834945;
 }
@@ -48,14 +51,14 @@
 #form{
   position: absolute;
 
-  width: 40%;
-  height: 40%;
+  width: 30vw;
+  height: 40vh;
 
-  padding-top: 120px;
-  padding-left: 22px;
+  margin-top: 5vh;
+  padding-left: 1vw;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -137,6 +140,7 @@
 #submit button{
   width: 110px;
   height: 42px;
+  padding-bottom: 8px;
 
   background-color: #F8E8E4;
   border: solid 1px #834945;
@@ -164,10 +168,12 @@
 
 img {
   position: absolute;
-  left: 54%;
+  width: 45vw;
+  height: 90vh;
 
-  width: 550px;
-  height: 550px;
+  left: 50vw;
+  margin: none;
+  padding-left: none;
 
   mix-blend-mode: normal;
 }
