@@ -1,27 +1,28 @@
 import cipher from './cipher.js';
 
 const btnEncodeElement = document.getElementById("btnEncode");
-function encodeMessage(event) {
-  event.preventDefault();
+
+function encodeMessage(e) {
+  e.preventDefault();
+  const offset = Number(document.getElementById("offset").value);
+
   let str = document.getElementById("str").value;
 
-  const offset = Number(document.getElementById("offset").value);
-  const messageEncode = cipher.encode(str, offset);
-
+  const messageEncode = cipher.encode(offset, str);
   document.getElementById("result").value = messageEncode;
 }
 
 btnEncodeElement.addEventListener('click', encodeMessage);
 
 const btnDecodeElement = document.getElementById("btnDecode");
-function decodeMessage(event) {
-  event.preventDefault();
+function decodeMessage(e) {
+  e.preventDefault();
+  const offset = Number(document.getElementById("offset").value);
+
   let str = document.getElementById("str").value;
 
-  const offset = Number(document.getElementById("offset").value);
-  const messageDecode = cipher.decode(str, offset);
-  
- document.getElementById("result").value = messageDecode;
+  const messageDecode = cipher.decode(offset, str);
+  document.getElementById("result").value = messageDecode;
 }
 
 btnDecodeElement.addEventListener('click', decodeMessage);
