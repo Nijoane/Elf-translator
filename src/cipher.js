@@ -1,6 +1,6 @@
 const upperCase = 65;
-const maxUpperCase = 90;
 const lowerCase = 97;
+const maxUpperCase = 90;
 const maxLowerCase = 122;
 
 const cipher = {
@@ -18,7 +18,10 @@ const cipher = {
   
         }else if(code >= lowerCase && code <= maxLowerCase){
           thisCipher += String.fromCharCode((code -lowerCase + offset) %26 + lowerCase);
-        } 
+
+        }else{
+          thisCipher += str.charAt(i);
+        }
       }  
     }
     return thisCipher;
@@ -39,7 +42,10 @@ const cipher = {
   
         }else if(code >= lowerCase && code <= maxLowerCase){
           thisDecipher += String.fromCharCode((code - maxLowerCase- offset) %26 + maxLowerCase);
-        } 
+          
+        }else{
+          thisDecipher += str.charAt(i);
+        }
       }  
     }
     return thisDecipher;
