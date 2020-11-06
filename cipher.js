@@ -1,46 +1,45 @@
+const upperCase = 65;
+const maxUpperCase = 90;
+const lowerCase = 97;
+const maxLowerCase = 122;
+
 const cipher = {
-  encode: (str, offset) => {
+  encode: (offset, str) => {
     let thisCipher = "";
     if(str == "" || str == null || offset == "" || offset == null){
-      throw new TypeError('Ops, something seems to have gone wrong ):', 'cipher.js', 5);
+      throw new TypeError('Ops, something seems to have gone wrong ):', 'cipher.js', 10);
 
-    } else {
-      for(let i = 0; i < str.length; i++) {
+    }else{
+      for(let i = 0; i < str.length; i++){
         let code = str.charCodeAt(i);
   
-        if(code >= 65 && code <= 90) {
-          thisCipher += String.fromCharCode((code -65 + offset) %26 + 65);
+        if(code >= upperCase && code <= maxUpperCase){
+          thisCipher += String.fromCharCode((code -upperCase + offset) %26 + upperCase);
   
-        } else if(code >= 97 && code <= 122) {
-          thisCipher += String.fromCharCode((code -97 + offset) %26 + 97);
-  
-        } else {
-          thisCipher += str.charAt(i);
-        }
+        }else if(code >= lowerCase && code <= maxLowerCase){
+          thisCipher += String.fromCharCode((code -lowerCase + offset) %26 + lowerCase);
+        } 
       }  
     }
     return thisCipher;
   },
 
-  decode: (str, offset) => {
+  decode: (offset, str) => {
     let thisDecipher = "";
 
     if(str == "" || str == null || offset == "" || offset == null){
-      throw new TypeError('Ops, something seems to have gone wrong ):', 'cipher.js', 29);
+      throw new TypeError('Ops, something seems to have gone wrong ):', 'cipher.js', 32);
 
-    } else{
-      for(let i = 0; i < str.length; i++) {
+    }else{
+      for(let i = 0; i < str.length; i++){
         let code = str.charCodeAt(i);
   
-        if(code >= 65 && code <= 90) {
-          thisDecipher += String.fromCharCode((code - 90 - offset) %26 + 90);
+        if(code >= upperCase && code <= maxUpperCase){
+          thisDecipher += String.fromCharCode((code - maxUpperCase - offset) %26 + maxUpperCase);
   
-        } else if(code >= 97 && code <= 122) {
-          thisDecipher += String.fromCharCode((code - 122 - offset) %26 + 122);
-  
-        } else {
-          thisDecipher += str.charAt(i);
-        }
+        }else if(code >= lowerCase && code <= maxLowerCase){
+          thisDecipher += String.fromCharCode((code - maxLowerCase- offset) %26 + maxLowerCase);
+        } 
       }  
     }
     return thisDecipher;
