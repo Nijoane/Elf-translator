@@ -24,7 +24,7 @@ Este projeto é um "tradutor de linguagem élfica" que foi criado ultilizando a 
 ## About the Project
 
 <p align="center">
-<img width="400" height="300" src="src/images/elf-translator.gif">
+<img width="600" height="300" src="src/images/elf-translator.gif">
 </p>
 
 E se você encontrasse um elfo e não pudesse se comunicar com ele? Que terrível seria! :scream:
