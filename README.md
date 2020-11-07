@@ -1,6 +1,6 @@
 # Elf :herb:
 
-## Índice
+## Table of Contents
 
 * [Table of Contents](#table-of-contents)
 * [About the Project](#about-the-project)
@@ -9,8 +9,7 @@
 * [How to Contribute](#how-to-contribute)
 
 
-
-## Table of Contents
+## About the Project
 
 Cifrar significa codificar. A [cifra de
 César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar) é um dos primeiros
@@ -18,10 +17,7 @@ tipos de criptografias conhecidas na história. O imperador romano Júlio César
 utilizava essa cifra para enviar ordens secretas aos seus generais no campo de
 batalha.
 
-Este projeto é um "tradutor de linguagem élfica" que foi criado ultilizando a Cifra de César,.
-
-
-## About the Project
+___Este projeto é um "tradutor de linguagem élfica" que foi criado ultilizando a Cifra de César___
 
 <p align="center">
 <img width="600" height="300" src="src/images/elf-translator.gif">
