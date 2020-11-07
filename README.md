@@ -23,7 +23,7 @@ ___Este projeto é um "tradutor de linguagem élfica" que foi criado ultilizando
 <img width="600" height="300" src="src/images/elf-translator.gif">
 </p>
 
-E se você encontrasse um elfo e não pudesse se comunicar com ele? Que terrível seria! :scream:
+E se você encontrasse um elfo e não pudesse se comunicar com ele? Que terrível seria! :scream: <br/>
 Foi pensando nisso que o Elf foi criado, um tradutor de linguagem élfica para pessoas que acreditam que elfos existem e principalmente que podemos nos comunicar com eles!
 
 ### Build With
@@ -44,26 +44,26 @@ _Houveram algumas decisões de mudança de layout durante o processo de densenvo
 
 ### Requirements
 
-* npm
+* npm<br/>
 `npm install npm@latest -g`
 
 
 ### Installation
 
-* Clone the repo 
+* Clone the repo<br/>
 `git clone https://github.com/Nijoane/Elf-translator.git`
 
 <br/>
 
-* Install NPM packages 
+* Install NPM packages<br/>
 `npm install`
 
 ## How to Contribute
 
 1. Fork the Project
-2. Create your Feature Branch`(git checkout -b feature/YourFeature)`
-3. Commit your Changes`(git commit -m "add your feature")`
-4. Push on the Branch `(git push origin feature/YourFeature )`
+2. Create your Feature Branch<br/>`(git checkout -b feature/YourFeature)`
+3. Commit your Changes<br/>`(git commit -m "add your feature")`
+4. Push on the Branch <br>`(git push origin feature/YourFeature )`
 5. Open a Pull Request
 
 ___
