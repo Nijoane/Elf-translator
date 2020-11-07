@@ -23,7 +23,7 @@ Este projeto é um "tradutor de linguagem élfica" que foi criado ultilizando a 
 
 ## About the Project
 
-![](src/images/elf-translator.gif)
+![Elf-translator](src/images/elf-translator.gif)
 
 
 E se você encontrasse um elfo e não pudesse se comunicar com ele? Que terrível seria! :scream:
@@ -37,7 +37,7 @@ Foi pensando nisso que o Elf foi criado, um tradutor de linguagem élfica para p
 
 ## Project prototype
 
-![](src/images/elf-prototype.png)
+![Elf-prototype](src/images/elf-prototype.png)
 
 
 >Protótipo inical do projeto criado ultilizando [Figma](https://www.figma.com/file/Dqh6nMAi1PoOzBRbhYvywL/Caesar-Cipher?node-id=0%3A1).
