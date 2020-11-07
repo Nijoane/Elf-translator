@@ -41,7 +41,7 @@ Foi pensando nisso que o Elf foi criado, um tradutor de linguagem élfica para p
 ![elf-prototype](src/images/elf-prototype.png)
 
 
->Protótipo inical do projeto criado ultilizando [Figma](https://www.figma.com/file/Dqh6nMAi1PoOzBRbhYvywL/Caesar-Cipher?node-id=0%3A1).
+>Protótipo inical do projeto criado ultilizando [Figma](https://www.figma.com/file/Dqh6nMAi1PoOzBRbhYvywL/Caesar-Cipher?node-id=0%3A1).<br/>
 _Houveram algumas decisões de mudança de layout durante o processo de densenvolvimento do projeto, o resultado final acabou ficando um pouco diferente do protótipo._
 
 ## Getting Started
