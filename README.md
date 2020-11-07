@@ -1,6 +1,6 @@
 # Elf :herb:
 
-Veja o projeto acessando esse ![link](nijoane.github.io/elf-translator/);
+Veja o projeto acessando esse ![link](nijoane.github.io/elf-translator/)
 
 ## Table of Contents
 
