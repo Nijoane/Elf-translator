@@ -17,7 +17,7 @@ tipos de criptografias conhecidas na história. O imperador romano Júlio César
 utilizava essa cifra para enviar ordens secretas aos seus generais no campo de
 batalha.
 
-___Este projeto é um "tradutor de linguagem élfica" que foi criado ultilizando a Cifra de César___
+___Este projeto é um "tradutor de linguagem élfica" que foi criado utilizando a Cifra de César___
 
 <p align="center">
 <img width="600" height="300" src="src/images/elf-translator.gif">
